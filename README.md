@@ -1,4 +1,4 @@
-# FUNE53 JS 20260626
+# FUNE53 Bootstrap 20260626
 
 * [電子版講義](https://doc.sagedaben.com/FUNE53)
 * [今天的程式碼](https://github.com/idben/FUNE53_20260626)
