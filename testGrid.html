@@ -17,11 +17,96 @@
             background-color: #abf8f5;
             margin-bottom: 10px;
         }
+
+        .box2 {
+            height: 100px;
+        }
     </style>
     <title>Bootstrap 格線系統</title>
 </head>
 
 <body>
+    <!-- 間距 gutter 的行為 -->
+    <!-- .container.mb-5>.row>.col*6>.box2>{$} -->
+    <div class="container mb-5">
+        <div class="row row-cols-3 gx-1 gy-3">
+            <div class="col">
+                <div class="box2 bg-primary text-white">1</div>
+            </div>
+            <div class="col">
+                <div class="box2 bg-secondary text-light">2</div>
+            </div>
+            <div class="col">
+                <div class="box2 bg-success text-white">3</div>
+            </div>
+            <div class="col">
+                <div class="box2 bg-danger text-light">4</div>
+            </div>
+            <div class="col">
+                <div class="box2 bg-warning text-light">5</div>
+            </div>
+            <div class="col">
+                <div class="box2 bg-info text-light">
+                    <div class="row gx-1">
+                        <div class="col">
+                            <div class="box2 bg-info-subtle text-dark">6-1</div>
+                        </div>
+                        <div class="col">
+                            <div class="box2 bg-info-subtle text-dark">6-2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RWD: 指定欄位數 -->
+    <div class="container mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+                <div class="box">1</div>
+            </div>
+            <div class="col">
+                <div class="box">2</div>
+            </div>
+            <div class="col">
+                <div class="box">3</div>
+            </div>
+            <div class="col">
+                <div class="box">4</div>
+            </div>
+            <div class="col">
+                <div class="box">5</div>
+            </div>
+            <div class="col">
+                <div class="box">6</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RWD: 指定欄寬 -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                <div class="box">1</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-8">
+                <div class="box">2</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-9">
+                <div class="box">3</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="box">4</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6">
+                <div class="box">5</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6">
+                <div class="box">6</div>
+            </div>
+        </div>
+    </div>
     <!-- 超過 12 會怎麼樣 -->
     <div class="container mb-5">
         <div class="row">
